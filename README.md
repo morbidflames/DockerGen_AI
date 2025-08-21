@@ -5,8 +5,23 @@ It provides two implementations:
 - Local version using Ollama
 - Hosted version using Google’s Gemini API
 
+## Overview
+
+- **Automated Dockerfile Generation:**  
+  Automatically generates production-ready Dockerfiles for different programming languages using AI models.  
+
+- **Best Practices Included:**  
+  Generated Dockerfiles follow Docker best practices such as small base images, installing dependencies efficiently, setting working directories, copying source code, and      multi-stage builds.  
+
+- **Flexible Language Support:**  
+  Works with multiple programming languages (e.g., Python, Node.js, Java) by simply providing the language name as input.  
+
+- **Easy Integration:**  
+  Simple command-line interface where the user enters a language, and the tool outputs a ready-to-use Dockerfile.  
+
+
 ## 📂 Project Structure
-.
+.  
 ├── generate_dockerfile.py          # Local version (Ollama model)   
 ├── generate_dockerfile_hosted.py   # Hosted version (Gemini API)   
 ├── requirements.txt                # Python dependencies
@@ -38,4 +53,8 @@ Enter a programming language, and the script will generate the Dockerfile using 
 -Best practices included (small base images, caching layers, etc.)  
 -Works with multiple programming languages  
 -Supports both local AI model (Ollama) and cloud model (Gemini)  
+
+## Output
+<img width="1325" height="839" alt="Screenshot 2025-08-10 164413" src="https://github.com/user-attachments/assets/407f3ddd-0f56-401e-a780-f57ba89f0f9a" />
+
 
