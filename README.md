@@ -5,7 +5,8 @@ It provides two implementations:
 - Local version using Ollama
 - Hosted version using Google’s Gemini API
 
-📂 #Project Structure
+📂 Project Structure
+
 .
 ├── generate_dockerfile.py          # Local version (Ollama model)
 ├── generate_dockerfile_hosted.py   # Hosted version (Gemini API)
@@ -33,16 +34,17 @@ python generate_dockerfile_hosted.py
 Enter a programming language, and the script will generate the Dockerfile using Google Gemini.
 
 🧩 Example
-Enter the programming language: python
-Generated Dockerfile:
-FROM python:3.10-slim AS builder
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
-CMD ["python", "app.py"]
+-Enter the programming language: python
+-Generated Dockerfile:
+ FROM python:3.10-slim AS builder
+ WORKDIR /app
+ COPY requirements.txt .
+ RUN pip install --no-cache-dir -r requirements.txt
+ COPY . .
+ CMD ["python", "app.py"]
 
-🌟 ## Features
+🌟 Features
+
 -Multi-stage Dockerfile generation
 -Best practices included (small base images, caching layers, etc.)
 -Works with multiple programming languages
