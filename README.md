@@ -1,27 +1,26 @@
-Automated DockerFile Generator 🐳
+##Automated DockerFile Generator 🐳
 
 This project automatically generates production-ready Dockerfiles for different programming languages using AI models.
 It provides two implementations:
 - Local version using Ollama
 - Hosted version using Google’s Gemini API
 
-📂 Project Structure
+📂 ##Project Structure
 .
 ├── generate_dockerfile.py          # Local version (Ollama model)
 ├── generate_dockerfile_hosted.py   # Hosted version (Gemini API)
 ├── requirements.txt                # Python dependencies
 
-⚙️ Requirements
+⚙️ ##Requirements
 Python 3.8+
 Dependencies listed in requirements.txt
 Either:
 Ollama installed (for local version), or
 Google API key (for hosted version)
-
 Install dependencies:
 pip install -r requirements.txt
 
-🚀 Usage
+🚀 ##Usage
 1. Local Version (Ollama)
 Run:
 python generate_dockerfile.py
@@ -33,7 +32,7 @@ Run:
 python generate_dockerfile_hosted.py
 Enter a programming language, and the script will generate the Dockerfile using Google Gemini.
 
-🧩 Example
+🧩 ##Example
 Enter the programming language: python
 Generated Dockerfile:
 FROM python:3.10-slim AS builder
@@ -43,7 +42,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 CMD ["python", "app.py"]
 
-🌟 Features
+🌟 ##Features
 -Multi-stage Dockerfile generation
 -Best practices included (small base images, caching layers, etc.)
 -Works with multiple programming languages
